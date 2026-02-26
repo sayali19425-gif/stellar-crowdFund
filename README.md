@@ -1,21 +1,59 @@
 🚀 Stellar CrowdFund
-Soroban Smart Contract + Multi-Wallet Integration
+Collect Donations with Real-Time Progress Tracking
 
-A decentralized crowdfunding dApp built on Stellar Soroban (Testnet) with multi-wallet support and real-time blockchain event synchronization.
+A decentralized crowdfunding application built on Stellar Soroban Smart Contracts with multi-wallet integration and real-time blockchain event synchronization.
 
-This project demonstrates:
+This project was built as part of White Belt Level 2 and demonstrates full smart contract deployment, wallet connection, and live transaction tracking on Stellar Testnet.
 
-Smart contract deployment
+📌 Overview
+
+Stellar CrowdFund enables users to:
+
+Connect using multiple Stellar wallets
+
+Donate to a crowdfunding campaign
+
+View real-time funding progress
+
+Track transaction status (Pending / Success / Failed)
+
+Interact directly with a deployed Soroban smart contract
+
+Focus areas of this project:
 
 Multi-wallet integration
 
-Contract interaction from frontend
+Smart contract deployment to Testnet
+
+Calling contract functions from frontend
+
+Reading and writing contract state
 
 Real-time event listening
 
 Transaction lifecycle tracking
 
-Production-level error handling
+Error handling
+
+
+🛠 Tech Stack
+Smart Contract
+
+Rust
+
+Soroban SDK
+
+Stellar Testnet
+
+Frontend
+
+React (Vite)
+
+StellarWalletsKit
+
+Stellar SDK
+
+JavaScript
 
 📂 Project Structure
 stellar-fund/
@@ -45,10 +83,10 @@ stellar-fund/
 ├── .gitignore
 └── README.md
 
-🔥 Features
+🔥 Features Implemented (Level 2 Requirements)
 ✅ Multi-Wallet Integration
 
-Integrated using StellarWalletsKit:
+Using StellarWalletsKit, users can connect via:
 
 Freighter
 
@@ -56,43 +94,69 @@ Albedo
 
 xBull
 
+Wallet detection and connection status handled properly.
+
 ✅ Smart Contract Deployment
 
-Network: Stellar Testnet
+Contract deployed to Stellar Testnet
 
-Contract ID:CBJ52HW7A42KUD3XP42VB35CSJ43QHLNQMPAC4PRF3WMLJVYCDDOGHUV
+Frontend connected to deployed contract
 
-✅ Contract Interaction
+Contract functions invoked from UI
 
-Frontend can:
+Contract ID:
 
-Call donate() function
+CBJ52HW7A42KUD3XP42VB35CSJ43QHLNQMPAC4PRF3WMLJVYCDDOGHUV
+✅ Contract Interaction from Frontend
 
-Read total donation amount
+The frontend:
 
-Sync state with blockchain
+Calls the donate() function
 
-Display transaction status
+Reads contract state
 
-✅ Transaction Tracking
+Updates funding progress dynamically
 
-Transaction Hash Example:
+✅ Real-Time Event Handling
+
+Event listener implemented
+
+UI automatically syncs after donation
+
+State reflects latest blockchain data
+
+✅ Transaction Status Tracking
+
+Each donation shows:
+
+⏳ Pending
+
+✅ Success
+
+❌ Failed
+
+Real Transaction Example:
+
+Transaction Hash:
 
 74017d6f00df0bc409f49b8abaecdcc7bc65094587d30c132f1a6b8466b84bc3
 
-Verify on Stellar Expert (Testnet):
-
+Verify on Stellar Explorer (Testnet):
 https://stellar.expert/explorer/testnet/tx/74017d6f00df0bc409f49b8abaecdcc7bc65094587d30c132f1a6b8466b84bc3
 
-⚠️ Error Handling Implemented
+⚠️ Error Handling (Required 3 Types)
+
+The application handles:
 
 Wallet not found
 
-User rejected transaction
+Transaction rejected by user
 
 Insufficient balance
 
-💻 Setup Instructions
+Clear user feedback is shown for each case.
+
+💻 How to Run the Project
 1️⃣ Clone Repository
 git clone https://github.com/YOUR_USERNAME/stellar-crowdfund.git
 cd stellar-crowdfund
@@ -101,35 +165,71 @@ cd frontend
 npm install
 npm run dev
 
-Runs at:
+App runs at:
 
 http://localhost:5173/
-📌 Level 2 Requirements Completed
+🌍 Live Demo
 
-Multi-wallet integration
+Currently running locally:
 
-Contract deployed on Testnet
+http://localhost:5173/
 
-Contract called from frontend
+(You can deploy to Vercel or Netlify for public submission.)
 
-Real-time event handling
+📸 Screenshots
+Wallet Selection
 
-Transaction status tracking
+(Add screenshot here in GitHub)
 
-Minimum 2+ commits
+![Wallet Connected](./screenshots/wallet-<img width="1909" height="850" alt="wallet-connect png" src="https://github.com/user-attachments/assets/f99aa481-9697-4815-94e4-6d525b40ba9b" />
+connect.png)
+Successful Transaction
+![Transaction Success](./screenshots/tx<img width="1891" height="844" alt="tx-success png" src="https://github.com/user-attachments/assets/2630aba4-210d-4e6b-b045-8dab8bedcb8c" />
+-success.png)
 
-🧠 Learning Outcome
+🧠 What This Project Demonstrates
 
-This project demonstrates full-cycle Web3 development:
+Deploying Soroban contracts to Testnet
 
-Writing Soroban smart contracts
+Integrating multiple Stellar wallets
 
-Deploying to Stellar Testnet
+Calling smart contract functions from React frontend
 
-Integrating wallets
+Handling asynchronous blockchain transactions
 
-Handling async blockchain events
+Listening to contract events
+
+Synchronizing UI state with blockchain
 
 Managing transaction lifecycle
 
-Building production-ready dApps
+Implementing production-level error handling
+
+
+📋 Submission Checklist
+
+✅ Public GitHub repository
+
+✅ README with setup instructions
+
+✅ Minimum 2+ meaningful commits
+
+✅ Multi-wallet integration
+
+✅ Contract deployed to testnet
+
+✅ Contract called from frontend
+
+✅ Transaction status visible
+
+✅ Real-time event integration
+
+🔐 Network Details
+
+Network: Stellar Testnet
+Contract ID:
+CBJ52HW7A42KUD3XP42VB35CSJ43QHLNQMPAC4PRF3WMLJVYCDDOGHUV
+
+👩‍💻 Author
+
+Built to master Soroban smart contracts, wallet integration, and real-time Web3 application development.
