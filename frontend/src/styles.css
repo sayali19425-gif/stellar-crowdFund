@@ -1,0 +1,133 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: #f4f6fb;
+  color: #1a1a2e;
+}
+
+.container {
+  max-width: 480px;
+  margin: 60px auto;
+  padding: 0 16px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 32px;
+}
+
+.card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 36px 28px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* Success card */
+.success-card { align-items: center; }
+.success-icon { font-size: 3rem; }
+.success-card h3 { font-size: 1.3rem; color: #1a7a4a; }
+.wallet-label { color: #555; font-size: 0.9rem; }
+
+.account-box {
+  background: #f0f4ff;
+  border: 1px solid #d0d8f0;
+  border-radius: 10px;
+  padding: 14px 18px;
+  width: 100%;
+  text-align: left;
+  word-break: break-all;
+}
+.account-label {
+  display: block;
+  font-size: 0.75rem;
+  color: #888;
+  margin-bottom: 4px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+.account-id {
+  font-size: 0.85rem;
+  font-family: monospace;
+  color: #1a1a2e;
+  font-weight: 600;
+}
+
+.proceed-btn {
+  margin-top: 8px;
+  background: #1a1a2e;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: 14px 32px;
+  font-size: 1rem;
+  cursor: pointer;
+  width: 100%;
+  transition: background 0.2s;
+}
+.proceed-btn:hover { background: #2d2d50; }
+
+/* Wallet info bar */
+.wallet-info {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: #f0f4ff;
+  border-radius: 8px;
+  padding: 10px 14px;
+  font-size: 0.85rem;
+}
+.dot { width: 8px; height: 8px; border-radius: 50%; background: #22c55e; }
+.address { flex: 1; font-family: monospace; text-align: left; }
+.disconnect-btn {
+  background: none;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 4px 10px;
+  font-size: 0.75rem;
+  cursor: pointer;
+  color: #666;
+}
+.disconnect-btn:hover { border-color: #e55; color: #e55; }
+
+/* Inputs & buttons */
+input[type="number"] {
+  width: 100%;
+  padding: 14px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  font-size: 1rem;
+  outline: none;
+}
+input:focus { border-color: #1a1a2e; }
+
+button {
+  width: 100%;
+  padding: 14px;
+  background: #1a1a2e;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+button:hover:not(:disabled) { background: #2d2d50; }
+button:disabled { opacity: 0.5; cursor: not-allowed; }
+
+.donate-btn { background: #0f6fff; }
+.donate-btn:hover:not(:disabled) { background: #0050cc; }
+
+.status { font-size: 0.9rem; color: #555; }
+.status.error { color: #e55; }
+.live-status { font-size: 0.9rem; color: #1a7a4a; font-weight: 600; }
+
+.tx-hash { font-size: 0.85rem; }
+.tx-hash a { color: #0f6fff; text-decoration: none; }
+.tx-hash a:hover { text-decoration: underline; }
