@@ -181,11 +181,9 @@ Wallet Selection
 
 (Add screenshot here in GitHub)
 
-![Wallet Connected](./screenshots/wallet-<img width="1909" height="850" alt="wallet-connect png" src="https://github.com/user-attachments/assets/f99aa481-9697-4815-94e4-6d525b40ba9b" />
-connect.png)
+![Wallet Connected](./screenshots/wallet-connect.png<img width="1909" height="850" alt="wallet-connect png" src="https://github.com/user-attachments/assets/f99aa481-9697-4815-94e4-6d525b40ba9b" />)
 Successful Transaction
-![Transaction Success](./screenshots/tx<img width="1891" height="844" alt="tx-success png" src="https://github.com/user-attachments/assets/2630aba4-210d-4e6b-b045-8dab8bedcb8c" />
--success.png)
+![Transaction Success](./screenshots/tx-success.png<img width="1891" height="844" alt="tx-success png" src="https://github.com/user-attachments/assets/2630aba4-210d-4e6b-b045-8dab8bedcb8c" />)
 
 🧠 What This Project Demonstrates
 
