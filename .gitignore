@@ -9,7 +9,7 @@ contract/**/target/
 *.wasm
 
 # Ignore Cargo.lock if this is a library (smart contract)
-Cargo.lock
+
 
 
 # =============================
